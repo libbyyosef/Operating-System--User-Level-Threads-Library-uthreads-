@@ -11,7 +11,8 @@ uthreads.cpp: Implementation file containing the source code for the uthreads li
 **Compilation**
 
 To compile the uthreads library, use the following command:
-**g++ -o uthreads uthreads.cpp -std=c++11*
+
+*g++ -o uthreads uthreads.cpp -std=c++11*
 
 **Usage**
 
@@ -20,27 +21,27 @@ To compile the uthreads library, use the following command:
 
 **Initialization**
 
-Initialize the thread library by calling **uthread_init(int quantum_usecs)* . This function sets up the main thread and defines the length of a quantum in microseconds.
+Initialize the thread library by calling *\*uthread_init(int quantum_usecs)* . This function sets up the main thread and defines the length of a quantum in microseconds.
 
 **Thread Creation**
 
-Create a new thread using **uthread_spawn(thread_entry_point entry_point)* with the entry point function for the new thread.
+Create a new thread using *uthread_spawn(thread_entry_point entry_point)* with the entry point function for the new thread.
 
 **Thread Termination**
 
-Terminate a thread using **uthread_terminate(int tid)* .
+Terminate a thread using *uthread_terminate(int tid)* .
 
 **Thread Blocking and Resuming**
 
-Block and resume threads using **uthread_block(int tid)* and **uthread_resume(int tid)*.
+Block and resume threads using *uthread_block(int tid)* and *uthread_resume(int tid)*.
 
 **Thread Sleeping**
 
-Make a thread sleep for a specified number of quantums using **uthread_sleep(int num_quantums)* .
+Make a thread sleep for a specified number of quantums using *uthread_sleep(int num_quantums)* .
 
 **Thread Information**
 
-Obtain information about threads using **uthread_get_tid()* , **uthread_get_total_quantums()*, and **uthread_get_quantums(int tid)* .
+Obtain information about threads using *uthread_get_tid()* , *uthread_get_total_quantums()*, and *uthread_get_quantums(int tid)* .
 
 Enjoy using the uthreads library in your projects!
 
